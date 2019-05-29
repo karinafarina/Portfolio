@@ -20,7 +20,7 @@ input {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  color: #444;
+  color: #000;
   text-align: center;
   line-height: 1.5;
   position: relative;
@@ -102,6 +102,7 @@ header {
   flex-wrap: wrap;
   width: 75%;
   margin: 20px auto;
+  font-family: 'Gentium Basic', serif;
 }
 
 @media only screen and (min-width: 550px) {
@@ -130,7 +131,8 @@ header {
 
 .about-column {
   padding: 20px 40px;
-  font-size: 14px;
+  font-size: 18px;
+  font-family:'Gentium Basic', serif;
 }
 
 .about-column:last-child {
@@ -168,6 +170,7 @@ header {
   padding: 0 20px 20px;
   display: flex;
   flex-direction: column;
+  font-family:'Gentium Basic', serif;
 }
 
 .project {

@@ -20,14 +20,14 @@
     </nav>
     <main role="main">
       <header role="banner">
-        <h3>Hi there, My name is Karina,<br />
-          I'm a Full-Stack Engineer</h3>
+        <h1>Hi there, My name is Karina,<br />
+          I'm a Full-Stack Engineer</h1>
         <h4><a href="#">View My Work</a></h4>
       </header>
 
       <section class="about">
         <div class="container">
-          <h3>About</h3>
+          <h2>About</h2>
           <div class="icon-row">
             <div class="fast icon">Icon</div>
             <div class="responsive icon">Icon</div>
@@ -45,7 +45,7 @@
 
       <section class="projects">
         <div class="container">
-          <h3>My Projects</h3>
+          <h2>My Projects</h2>
           <div class="my-projects">
             <div class="tudor project">
               <img src="#" alt="Tudor Trivia">
@@ -81,18 +81,24 @@
       </section>
 
       <section class="contact">
-        <form class="contact-form">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Enter email" required>
-          <textarea name="message" type="text" placeholder="Your Message" rows="8" cols="80"></textarea>
-          <input class="form-button" type="submit" name="submit" value="SUBMIT">
-        </form>
+        <div class="container">
+          <h2 class="form-title">Contact</h2>
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Enter email" required>
+            <textarea name="message" type="text" placeholder="Your Message" rows="8" cols="50"></textarea>
+            <input class="form-button" type="submit" name="submit" value="SUBMIT">
+          </form>
+        </div>
       </section>
     </main>
     <footer role="content-info">
-      <a href="#" class="gitHub">GitHub</a>
-      <a href="#" class="linkedIn">LinkedIn</a>
-      <a href="#" class="email">Email</a>
+      <div class="container footer-wrapper">
+        <div class="links"<a href="#" >LinkedIn</a></div>
+        <div class="links"<a href="#" >GitHub</a></div>
+        <div class="links"<a href="#" >Email</a></div>
+      </div>
+      <div class="copywright">KARINA GAULIN &copy;2019</div>
     </footer>
   </body>
 </html>

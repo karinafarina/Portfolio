@@ -20,7 +20,6 @@ input {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  color: #000;
   text-align: center;
   line-height: 1.5;
   position: relative;
@@ -28,17 +27,19 @@ body {
 }
 
 nav, footer {
-  background-color: #aaa;
+  background-color: #000;
+  color: #eee;
 }
 
 section {
   min-height: 200px;
   padding-top: 20px;
-  background-color: #bbb;
+  color: #eee;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: #e6f9e6;
+  color: #000;
 }
 
 .container {
@@ -48,7 +49,6 @@ section:nth-child(even) {
 
 /* NAV */
 nav {
-  //display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -93,6 +93,21 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #eee;
+}
+
+#myVideo {
+  position: fixed;
+  object-fit: ;
+  right: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.my-name {
+  color: #29a329;
 }
 
 /* ABOUT */
@@ -178,6 +193,8 @@ header {
   font-size: 16px;
   border: 1px solid black;
   min-height: 200px;
+  background-color: #e6f9e6;
+  color: #000;
 }
 
 .project-links {

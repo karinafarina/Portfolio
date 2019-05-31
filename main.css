@@ -26,6 +26,19 @@ body {
   margin: 0;
 }
 
+.background {
+  background-image: url("media/green.jpg");
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+
 nav, footer {
   background-color: #000;
   color: #eee;
@@ -34,11 +47,16 @@ nav, footer {
 section {
   min-height: 200px;
   padding-top: 20px;
-  color: #eee;
+  min-height: 448px;
 }
 
 section:nth-child(even) {
-  background-color: #f6fdf6;
+  background-color: #404040;
+color: #fff;
+}
+
+section:nth-child(odd) {
+
   color: #000;
 }
 
@@ -88,12 +106,10 @@ nav {
 /*HEADER*/
 header {
   padding: 50px;
-  margin-top: 70px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #eee;
   font-size: 16px;
 }
 
@@ -114,11 +130,19 @@ header {
 }
 
 .my-name {
-  color: #29a329;
+  color: #0b816b;
 }
 
 /* ABOUT */
-.icon-row {
+
+.about {
+  width: 100%;
+  min-height: 200px;
+  /* -webkit-clip-path: polygon(0 0, 0 100%, 85% 100%, 100% 50%, 80% 0);
+  clip-path: polygon(0 0, 0 100%, 85% 100%, 100% 50%, 80% 0); */
+
+}
+/* .icon-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -143,8 +167,11 @@ header {
   width: 100px;
   border-radius: 85px;
   font-size: 30px;
+} */
+.about h2 {
+  display: inline-block;
+  border-bottom: 2px solid #fff;
 }
-
 .about-row {
   display: flex;
   flex-direction: column;
@@ -204,10 +231,31 @@ header {
   color: #000;
 }
 
+.project a {
+  cursor: pointer;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project-description {
+  padding: 20px;
+}
+
 .project-links {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+}
+.project-links a {
+  color: #0b816b;
 }
 
 @media only screen and (min-width: 550px) {
@@ -218,14 +266,28 @@ header {
   }
   .project {
     width: 33%;
-    margin: 0;
+    margin: 0 auto;
     padding: 30px;
   }
 }
 
 /*CONTACT */
 .contact {
-  
+  -webkit-clip-path: polygon(100% 0, 75% 50%, 50% 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 0% 97%, 0 10%);
+}
+
+@media only screen and (min-width: 550px) {
+  .contact {
+    -webkit-clip-path: polygon(100% 0, 75% 50%, 50% 100%, 0 0);
+    clip-path: polygon(100% 0, 75% 50%, 50% 100%, 0 0);
+    height: 525px;
+  }
+}
+
+.form-title {
+  display: inline;
+  border-bottom: 2px solid #fff;
 }
 
 .contact-form {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <div class="background"></div>
     <nav role="navigation">
       <i class="fas fa-hamburger nav-mobile"></i>
       <ul class="nav-desktop">
@@ -20,9 +21,9 @@
     </nav>
     <main role="main">
       <header role="banner">
-        <video autoplay muted loop id="myVideo">
+        <!-- <video autoplay muted loop id="myVideo">
           <source src="./media/moon.webm" type="video/webm" />
-        </video>
+        </video> -->
         <h1>Hi there, My name is <span class="my-name">Karina</span>,<br />
           I'm a Full-Stack Engineer</h1>
         <h4><a href="#">View My Work</a></h4>
@@ -31,17 +32,16 @@
       <section class="about">
         <div class="container">
           <h2>About</h2>
-          <div class="icon-row">
+          <!-- <div class="icon-row">
             <div class="fast icon">Icon</div>
             <div class="responsive icon">Icon</div>
             <div class="intuitive icon">Icon</div>
             <div class="dynamic icon">Icon</div>
-          </div>
+          </div> -->
           <div class="about-row">
             <div class="about-column"><img src="#" /></div>
-            <!-- <div class="about-column">I am a full-stack web developer/engineer with one year of proffessional experience and a current student of Bloc’s Web Developer Track. I enjoy programming and development because I really get into a zone when problem-solving and bringing designs and ideas to life. The time flies by and I am having fun!
-            My other interests include taking walks, reading, soccer, and Zelda. I am always learning new technologies and am interested in history and the future of tech. -->
-            <div class="about-column">About Content</div>
+            <div class="about-column">I am a full-stack web developer/engineer with one year of professional experience and I'm a current student of Bloc’s Web Developer Track. I enjoy programming and development because I really get into a zone when problem-solving and bringing designs and ideas to life. The time flies by and I am having fun!
+            My other interests include yoga, taking walks, reading, soccer, and Zelda. I am always learning new technologies and am interested in history and the future of tech.
             </div>
           </div>
         </div>
@@ -51,20 +51,20 @@
         <div class="container">
           <h2>My Projects</h2>
           <div class="my-projects">
-            <div class="tudor project">
-              <img src="#" alt="Tudor Trivia">
-              <div class="project-title">Project Title</div>
-              <div class="project-description">Project Description
-                <!-- This is a quiz that will test your Tudor knowledge! You can try as many times as you like as there are three different outcomes depending on how well you do!
-              HTML5, CSS3, JavaScript, JQuery -->
-              </div>
+            <div class="project">
+              <a href="https://karinafarina.github.io/tudor-trivia/"><img src="media/tudor.png" alt="Tudor Trivia"></a>
+              <div class="project-title">Tudor Trivia</div>
+              <p class="project-description">
+                This is a quiz that will test your Tudor knowledge! You can try as many times as you like as there are three different outcomes depending on how well you do!<br />
+                Technologies used are HTML5, CSS3, JavaScript, JQuery
+              </p>
+
               <div class="project-links">
-                <!-- <a href="https://karinafarina.github.io/tudor-trivia/">Take a Look!</a>
-                <a href="https://github.com/karinafarina/tudor-trivia">The Repo</a> -->
-                Project Links
+                <a href="https://karinafarina.github.io/tudor-trivia/">Take a Look!</a>
+                <a href="https://github.com/karinafarina/tudor-trivia">The Repo</a>
               </div>
             </div>
-            <div class="shopping-list project">
+            <!-- <div class="shopping-list project">
               <img src="#" alt="Shopping List">
               <div class="project-title">Project Title</div>
               <div class="project-description">Project Description</div>
@@ -79,14 +79,14 @@
               <div class="project-links">
                 Project Links
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
 
       <section class="contact">
+        <h2 class="form-title">Contact</h2>
         <div class="container">
-          <h2 class="form-title">Contact</h2>
           <form class="contact-form">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Enter email" required>
@@ -99,7 +99,7 @@
     <footer role="content-info">
       <div class="copywright">KARINA GAULIN &copy;2019</div>
       <div class="container footer-wrapper">
-        <div class="links"<a href="#" >LinkedIn</a></div>
+        <a class="links" href="https://www.linkedin.com/in/karina-gaulin-8bb77257/" ><i class="fab fa-linkedin-in"></i></a>
         <div class="links"<a href="#" >GitHub</a></div>
         <div class="links"<a href="#" >Email</a></div>
       </div>

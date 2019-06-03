@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
   </head>
-  <body>
+  <body id="home">
     <div class="background"></div>
     <nav role="navigation">
       <i class="fas fa-hamburger nav-mobile"></i>
-      <ul class="nav-desktop">
-        <li>Home</li>
-        <li>About</li>
-        <li>My Projects</li>
-        <li>Contact Me</li>
+      <ul id="main-nav" class="nav-desktop">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main role="main">
@@ -29,7 +29,7 @@
         <h4><a href="#">View My Work</a></h4>
       </header>
 
-      <section class="about">
+      <section id="about">
         <div class="container">
           <h2>About</h2>
           <!-- <div class="icon-row">
@@ -39,7 +39,10 @@
             <div class="dynamic icon">Icon</div>
           </div> -->
           <div class="about-row">
-            <div class="about-column"><img src="#" /></div>
+            <div class="about-column">
+              <div class="img-wrapper">
+                <img src="media/me.png" /></div>
+              </div>
             <div class="about-column">I am a full-stack web developer/engineer with one year of professional experience and I'm a current student of Bloc’s Web Developer Track. I enjoy programming and development because I really get into a zone when problem-solving and bringing designs and ideas to life. The time flies by and I am having fun!
             My other interests include yoga, taking walks, reading, soccer, and Zelda. I am always learning new technologies and am interested in history and the future of tech.
             </div>
@@ -47,7 +50,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="projects">
         <div class="container">
           <h2>My Projects</h2>
           <div class="my-projects">
@@ -55,8 +58,8 @@
               <a href="https://karinafarina.github.io/tudor-trivia/"><img src="media/tudor.png" alt="Tudor Trivia"></a>
               <div class="project-title">Tudor Trivia</div>
               <p class="project-description">
-                This is a quiz that will test your Tudor knowledge! You can try as many times as you like as there are three different outcomes depending on how well you do!<br />
-                Technologies used are HTML5, CSS3, JavaScript, JQuery
+                This is a quiz that will test your Tudor knowledge! You can try as many times as you like as there are three different outcomes depending on how well you do!
+                <span class="tech">Technologies used are HTML5, CSS3, JavaScript, JQuery</span>
               </p>
 
               <div class="project-links">
@@ -84,13 +87,13 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact">
         <h2 class="form-title">Contact</h2>
         <div class="container">
           <form class="contact-form">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Enter email" required>
-            <textarea name="message" type="text" placeholder="Your Message" rows="8" cols="50"></textarea>
+            <textarea name="message" type="text" placeholder="Your Message" rows="8" cols="47"></textarea>
             <input class="form-button" type="submit" name="submit" value="SUBMIT">
           </form>
         </div>
@@ -100,9 +103,11 @@
       <div class="copywright">KARINA GAULIN &copy;2019</div>
       <div class="container footer-wrapper">
         <a class="links" href="https://www.linkedin.com/in/karina-gaulin-8bb77257/" ><i class="fab fa-linkedin-in"></i></a>
-        <div class="links"<a href="#" >GitHub</a></div>
-        <div class="links"<a href="#" >Email</a></div>
+         <a class="links" href="https://github.com/karinafarina" ><i class="fab fa-github"></i></a>
+        <a class="links" href="mailto:karinagaulin@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

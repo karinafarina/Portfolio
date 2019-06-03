@@ -82,13 +82,29 @@ nav {
   padding: 10px;
 }
 
+.open {
+  display: none;
+  font-size: 25px;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.menu {
+  padding-left: 0;
+  margin-top: -40px;
+}
+
+.menu li:hover {
+  color: #756537;
+}
+
 @media only screen and (min-width: 550px) {
   .nav-mobile {
     display: none;
   }
 }
 
-.nav-desktop {
+.menu {
   display: none;
 }
 @media only screen and (min-width: 550px) {
@@ -96,7 +112,7 @@ nav {
     display: flex;
     justify-content: flex-end;
   }
-  .nav-desktop {
+  .menu {
     display: flex;
     justify-content: space-around;
     width: 40%;
@@ -131,7 +147,14 @@ header {
 }
 
 .my-name {
+  color: #756537;
+}
+
+.yellow {
   color: #0b816b;
+}
+.yellow:hover {
+  color: #756537;
 }
 
 /* ABOUT */
@@ -213,6 +236,7 @@ header {
   .about-column {
     width: 50%;
     padding: 60px;
+    font-size: 20px;
   }
   .about-column:last-child {
     padding-bottom: 90px;
@@ -276,8 +300,13 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .project-links a {
-  color: #0b816b;
+  color: #0b816b
+}
+
+.project-links a:hover {
+  color: #756537;
 }
 
 @media only screen and (min-width: 550px) {
@@ -358,6 +387,10 @@ footer {
   align-items: center;
   margin: 0 auto;
   width: 80%;
+}
+
+.links:hover {
+  color: #756537;
 }
 @media only screen and (min-width: 550px) {
   footer {

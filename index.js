@@ -7,4 +7,10 @@ $(document).ready(function() {
 	}, 1000);
     e.preventDefault();
   });
+
+  $(".nav-mobile").on("click", function() {
+    $(".menu").animate({
+      height: 'toggle'
+    });
+  })
 });

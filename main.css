@@ -48,15 +48,16 @@ section {
   min-height: 200px;
   padding-top: 20px;
   min-height: 448px;
+  border-top: 1px solid #0b816b;
+  border-bottom: 1px solid #0b816b;
 }
 
 section:nth-child(even) {
   background-color: #404040;
-color: #fff;
+  color: #fff;
 }
 
 section:nth-child(odd) {
-
   color: #000;
 }
 

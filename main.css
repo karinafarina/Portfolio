@@ -91,7 +91,7 @@ nav {
 
 .menu {
   padding-left: 0;
-  margin-top: -40px;
+  display: none;
 }
 
 .menu li:hover {
@@ -102,12 +102,6 @@ nav {
   .nav-mobile {
     display: none;
   }
-}
-
-.menu {
-  display: none;
-}
-@media only screen and (min-width: 550px) {
   nav {
     display: flex;
     justify-content: flex-end;
@@ -117,6 +111,7 @@ nav {
     justify-content: space-around;
     width: 40%;
     cursor: pointer;
+    margin-top: 20px;
   }
 }
 

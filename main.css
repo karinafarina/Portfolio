@@ -339,7 +339,7 @@ header {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 1200px) {
   #contact {
     -webkit-clip-path: polygon(100% 0, 75% 50%, 50% 100%, 0 0);
     clip-path: polygon(100% 0, 75% 50%, 50% 100%, 0 0);

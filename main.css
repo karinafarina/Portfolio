@@ -160,11 +160,11 @@ header {
 #about {
   width: 100%;
   min-height: 200px;
-  /* -webkit-clip-path: polygon(0 0, 0 100%, 85% 100%, 100% 50%, 80% 0);
-  clip-path: polygon(0 0, 0 100%, 85% 100%, 100% 50%, 80% 0); */
-
 }
-/* .icon-row {
+
+
+/*MAY ADD IN LATER VERSION
+ .icon-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

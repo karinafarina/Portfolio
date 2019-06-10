@@ -18,5 +18,14 @@ $(document).ready(function() {
     $(".menu").animate({
       height: 'toggle'
     });
+  });
+
+  $(window).scroll(function() {
+    var d = $('nav');
+    if (('body').offset().top < 300) {
+      d.fadeIn();
+    } else {
+      d.fadeOut();
+    }
   })
 });

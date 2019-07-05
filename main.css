@@ -276,6 +276,10 @@ header {
   padding-bottom: 16px;
 }
 
+.project-img-wrapper {
+  overflow: hidden;
+}
+
 .tech {
   margin-top: 10px;
   display: inline-block;
@@ -320,9 +324,27 @@ header {
     padding-bottom: 60px;
   }
   .project {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     padding: 30px;
+  }
+  .project-img-wrapper {
+    height: 221px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project {
+
+  }
+  .project-img-wrapper {
+
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .project-img-wrapper {
+    height: 372px;
   }
 }
 

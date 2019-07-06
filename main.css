@@ -278,6 +278,7 @@ header {
 
 .project-img-wrapper {
   overflow: hidden;
+  cursor: pointer;
 }
 
 .tech {
@@ -307,6 +308,7 @@ header {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .project-links a {

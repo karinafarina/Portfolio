@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var d = $('nav');
-    if (('body').offset().top < 300) {
+    if(('body').offset().top < 300) {
       d.fadeIn();
     } else {
       d.fadeOut();

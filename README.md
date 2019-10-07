@@ -1,4 +1,4 @@
-# bloc-portfolio
+# portfolio
 
 This is my Portfolio Website. 
 I will be adding more projects later. 

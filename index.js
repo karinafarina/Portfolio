@@ -28,4 +28,21 @@ $(document).ready(function() {
       d.fadeOut();
     }
   })
+  // $("#contact-form").on("submit", function(event) {
+  //   event.preventDefault();
+  //   var data = {
+  //     name: $("#name").val(),
+  //     email: $("#email").val(),
+  //     message: $("#message").val()
+  //   };
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "email.php",
+  //     data: data,
+  //     success: function () {
+  //       console.log('success')
+  //       $('.success').fadeIn(1000);
+  //     }
+  //   });
+  // })
 });

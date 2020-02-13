@@ -327,7 +327,7 @@ header {
   }
   .project {
     width: 40%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 30px;
   }
   .project-img-wrapper {
@@ -356,6 +356,10 @@ header {
   clip-path: polygon(100% 0, 100% 85%, 0% 97%, 0 10%);
 
   padding-top: 48px;
+}
+
+.contact-me {
+  margin-top: 130px;
 }
 
 .contact-form {

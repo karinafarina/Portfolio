@@ -22,27 +22,10 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var d = $('nav');
-    if(('body').offset().top < 300) {
+    if($('body').offset().top < 300) {
       d.fadeIn();
     } else {
       d.fadeOut();
     }
   })
-  // $("#contact-form").on("submit", function(event) {
-  //   event.preventDefault();
-  //   var data = {
-  //     name: $("#name").val(),
-  //     email: $("#email").val(),
-  //     message: $("#message").val()
-  //   };
-  //   $.ajax({
-  //     type: "POST",
-  //     url: "email.php",
-  //     data: data,
-  //     success: function () {
-  //       console.log('success')
-  //       $('.success').fadeIn(1000);
-  //     }
-  //   });
-  // })
 });

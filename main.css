@@ -312,7 +312,7 @@ header {
 }
 
 .project-links a {
-  color: #0b816b
+  color: #4D4D4D
 }
 
 .project-links a:hover {
@@ -376,8 +376,18 @@ header {
 }
 
 .form-title {
-  display: inline;
+  display: inline-block;
   border-bottom: 2px solid #fff;
+  margin: 110px auto;
+  font-family: cursive;
+  font-size: 50px;
+}
+.form-title a.links {
+  margin-left: 0;
+}
+
+.form-title:hover {
+  border-bottom: 2px solid #756537;;
 }
 
 .contact-form {
@@ -438,9 +448,11 @@ footer {
     margin: 0 30px;
     width: 100%;
   }
+
   .links {
-    margin-left: 60px;
+    margin-left: 60px;;
   }
+  
 
   .fab, .fas {
     font-size: 1.5em;
